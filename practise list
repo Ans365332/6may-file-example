@@ -1,0 +1,236 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPtTHO0WkzCQ4Um+BClkwXS",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Ans365332/6may-file-example/blob/main/practise%20list\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 6,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "5P0SefTrK4pk",
+        "outputId": "08de42cf-2295-444d-9f3e-7d66fee11d0f"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "99\n"
+          ]
+        }
+      ],
+      "source": [
+        "n=[10,20,4,45,99]\n",
+        "max=n[0]\n",
+        "for i in range(0,5):\n",
+        "  if(n[i]>max):\n",
+        "    max=n[i]\n",
+        "print(max)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "n=[10,20,30,40]\n",
+        "sum=0\n",
+        "for i in range(0,4):\n",
+        "  sum+=n[i]\n",
+        "print(sum)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "AidNFlaiNiOZ",
+        "outputId": "5db00519-1e0d-4be3-d09a-ca673f105c7c"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "100\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "n=[1,2,3,4,5]\n",
+        "i=0\n",
+        "j=len(n)-1\n",
+        "while(i<j):\n",
+        "  s=n[i]\n",
+        "  n[i]=n[j]\n",
+        "  n[j]=s\n",
+        "  i+=1\n",
+        "  j-=1\n",
+        "print(n)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "_FMnPn35OLR2",
+        "outputId": "9793b252-1694-469b-dfde-57af0857c1f2"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[5, 4, 3, 2, 1]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "n=[1,4,2,6,3,7,5]\n",
+        "for index in range(0,len(n)):\n",
+        "  for j in range(index+1,len(n)):\n",
+        "    if(n[index]<n[j]):\n",
+        "     print(n[index])\n",
+        ""
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "OPBbIfqQOsqK",
+        "outputId": "46c24c72-8c91-41a4-8f4d-691d29744617"
+      },
+      "execution_count": 30,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1\n",
+            "1\n",
+            "1\n",
+            "1\n",
+            "1\n",
+            "1\n",
+            "4\n",
+            "4\n",
+            "4\n",
+            "2\n",
+            "2\n",
+            "2\n",
+            "2\n",
+            "6\n",
+            "3\n",
+            "3\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "n=[1,2,2,3,4,4,5]\n",
+        "newlist=[]\n",
+        "for index in range(0,len(n)):\n",
+        "  for j in range(index+1,len(n)):\n",
+        "    if(n[index]==n[j]):\n",
+        "      newlist.remove(n)\n",
+        "print(newlist)\n",
+        "\n",
+        "\n",
+        ""
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 216
+        },
+        "id": "_bwp-oEKSjBn",
+        "outputId": "b8e2b292-8f02-4093-e865-a7d451d3c88b"
+      },
+      "execution_count": 94,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "ValueError",
+          "evalue": "list.remove(x): x not in list",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mValueError\u001b[0m                                Traceback (most recent call last)",
+            "\u001b[0;32m/tmp/ipython-input-94-3102253923.py\u001b[0m in \u001b[0;36m<cell line: 0>\u001b[0;34m()\u001b[0m\n\u001b[1;32m      4\u001b[0m   \u001b[0;32mfor\u001b[0m \u001b[0mj\u001b[0m \u001b[0;32min\u001b[0m \u001b[0mrange\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mindex\u001b[0m\u001b[0;34m+\u001b[0m\u001b[0;36m1\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0mlen\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mn\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      5\u001b[0m     \u001b[0;32mif\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mn\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0mindex\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m==\u001b[0m\u001b[0mn\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0mj\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 6\u001b[0;31m       \u001b[0mnewlist\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mremove\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mn\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      7\u001b[0m \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mnewlist\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      8\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mValueError\u001b[0m: list.remove(x): x not in list"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "n=[1,2,3,4,3,5,6]\n",
+        "newlist=[]\n",
+        "for index in range(0,len(n)):\n",
+        "  for j in range(index+1,len(n)):\n",
+        "    if(n[index]+n[j]==6):\n",
+        "\n",
+        "      newlist.append((n[index],n[j]))\n",
+        "print(newlist)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "qqn7EdvWYI6A",
+        "outputId": "2eb2558d-3cd6-4f11-c1fa-1acba2955fce"
+      },
+      "execution_count": 86,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[(1, 5), (2, 4), (3, 3)]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "hFuyopY5a__b"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
